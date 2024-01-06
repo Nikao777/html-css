@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'StarWars';
+            src: url(Fontes/soloist1.ttf) format(truetype), url(Fontes/soloist3d.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+        body{
+            font-family: 'StarWars';
+        }
+        h1{
+            font-family: 'StarWars''Times New Roman', Times, serif;
+            font-size: 3em;
+        }
+        h2{
+            font-family: 'StarWars';
+        }
+        p{
+            font-family: 'StarWars';
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iste suscipit ut deleniti tenetur dignissimos explicabo magni excepturi nulla? Qui blanditiis quasi quas cum dignissimos iste culpa quam dolorem nostrum.</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus amet placeat sapiente inventore error id officiis. Minima voluptas amet ad vel doloribus, blanditiis delectus inventore pariatur non neque odit. Sequi!</p>
+</body>
+</html>

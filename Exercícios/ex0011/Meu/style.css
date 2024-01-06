@@ -1,0 +1,21 @@
+body {
+    background-image: linear-gradient(to right,  #5951D6, #921DB1,#C30186, #DC265D, #F5A402);
+    text-align-last: center;
+}
+h1 {
+    color: #3917b5df;
+    text-shadow: 1px 1px 3px #27107d75;
+}
+img {
+    border-radius: 100px;
+}
+h2 {
+    margin: 20px;
+    color: #3917b5df;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 3px #2c128b92;
+}
+iframe {
+    width: 900px;
+    height: 680px;
+}

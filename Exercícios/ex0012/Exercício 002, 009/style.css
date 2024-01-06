@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+h1 {
+    display: flex;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    margin-top: 40px;
+}
+.video1{
+    display: inline-flex;
+    width: 50%;
+    justify-content: end;
+    margin-top: 5%;
+}
+.video2{
+    display: inline-block;
+    justify-content: end;
+    width: 45%;
+}
+.video3{
+    display: inline-flex;
+    width: 50%;
+    justify-content: end;
+}
+.video4{
+    display: inline-flex;
+}
+.video{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 460px;
+}
+.link {
+    margin-top: 20px;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    color: blueviolet;
+}
+a:hover{
+    color: red;
+}

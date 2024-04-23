@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScipt</title>
+</head>
+<body>
+    <a href="#" id="link">Clique em mim</a>
+    <div id="saida"></div>
+
+    <script>
+        const a = document.getElementById("link");
+        a.addEventListener("click", () => {
+            s = document.querySelector("#saida");
+            s.innerHTML += "<p>Você Clicou!</p>"
+        })
+    </script>
+</body>
+</html>

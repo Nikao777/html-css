@@ -7,9 +7,15 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    height: 100vh;
+    overflow-y: hidden;
 }
 header{
     background-color: rgb(158, 158, 158);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+    
 }
 header > h1{
     text-align: center;
@@ -17,16 +23,19 @@ header > h1{
 menu ul{
     list-style-type: none;
     display: inline-block;
-    background-color: gray;
+    margin-left: 20px;
+
 }
 menu li{
     padding: 10px;
     background-color: rgb(75, 75, 75);
     display: inline-block;
     color: white;
+    border-radius: 20px;
 }
 article{
     width: 600px;
     display: block;
     margin: auto;
+    width: 500px;
 }

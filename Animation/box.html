@@ -26,16 +26,14 @@
         @keyframes move{
             0%{
                 transition-delay: 6s;
-                transform: translateX(0px) perspective(500px) rotate(0deg);
-                clip-path: circle(80px);
-                
-                
-                
+                transform: translateX(0px) perspective(500px) rotate(0deg);             
             }
             25%{
                 transform: translateX(380px) rotate(25deg);
                 background-color: green;
-                clip-path: circle(50px);
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
                 opacity: 0.5;
                 
             }

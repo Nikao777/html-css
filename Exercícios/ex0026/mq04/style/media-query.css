@@ -10,10 +10,27 @@ Grandes Telas: Acima de 1200px;
 
 
 */
-bo
 
 @media print{ /*Impressão */
-
+    #phone{
+        display: none;
+    }
+    #print{
+        display: block;
+    }
+    body{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main{
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.63);
+        & h1{
+            text-shadow: none;
+            color: black;
+        }
+    }
+    main::after{
+        content: 'Impressão';
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 992px){ /* Tablet*/
     #tablet{
@@ -23,12 +40,29 @@ bo
         display: none;
     }
     body{
-        back
+        background-image: url(../img/back-tablet.jpg);
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px){ /*Desktop*/
+    #pc{
+        display: block;
+    }
+    #tablet, #phone{
+        display: none;
+    }
+    body{
+        background-image: url(../img/back-pc.jpg);
+    }
 
 }
 @media screen and (min-width: 1200px){ /* Grandes Telas*/
-
+    #tv{
+        display: block;
+    }
+    #pc, #phone{
+        display: none;
+    }
+    body{
+        background-image: url(../img/back-tv.jpg);
+    }
 }

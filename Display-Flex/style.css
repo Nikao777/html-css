@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #1e293b;
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+
+    /* Flex-direction: direção dos itens: row: linha e column: coluna
+     */
+
+    /* flex-direction: column-reverse; */
+
+    /* Flex-wrap: nowrap: não fica maior que o pai
+
+    wrap: fica maior que o pai se é necessário
+
+    wrap-reverse: cresce de trás para frente
+    
+    */
+    
+    /* flex-wrap: wrap; */
+
+    /* flex-flow: atalho para column e wrap */
+
+    /* flex-flow: column wrap; */
+
+    /* justify-content: alinhar na vertical, 
+    
+    space-between: espaçar os itens ao maximo, 
+
+    space-around: espaçamento igual entre os itens, 
+
+    space-envely: espaçamento entre os itens com margem*/
+
+    /* justify-content: space-between; */
+
+    /* align-items: alinhar vertical */
+
+    /* align-items: center; */
+
+    /* align-content: agrupa tudo e joga para o local */
+
+    align-content: center;
+
+    /* gap: espaçamento entre todos os elementos */
+
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+
+}
+.item{
+    background-color: #7e22ce;
+    color: white;
+    font-size: 22px;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+
+    /* flex-basis: tamanho exato em cada item */
+
+    /* flex-basis: 20px; */
+
+    /* flex-grow: cresce com a tela, vezes ...-1 á 0 á 2...*/
+
+    /* flex-grow: 2; */
+
+    /* flex-shrink: quanto os itens vão encolher */
+
+    /* flex-shrink: 4; */
+
+    /* flex: atalho de basis, grow, basis */
+
+    /* flex: 20px 1 4; */
+
+    /* order: ordem dos itens, mas tem que colocar para cada item*/
+
+    /* order: 2; */
+
+    /* align-self e justify-self: alinhar somente um item */
+}
+
+.item2{
+    /* flex-basis: 20px; */
+    /* flex: 20px 3 5; */
+
+    /* order: 3; */
+    /* align-self: center;
+    justify-self: flex-start; */
+}
+.item3{
+    /* order: 1; */
+    /* align-self: flex-end;
+    justify-content: flex-start; */
+}

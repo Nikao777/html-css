@@ -8,17 +8,23 @@
         body{
             height: 100vh;
             width: 100vw;
-            background-image: linear-gradient(90deg, #6ee7b7 #10b981, #047857);
-            animation: gradient 5s infinite linear;
+            overflow: hidden;
+            background: linear-gradient(to right,darkorange, darkblue, crimson);
+            animation: gradient 5s linear infinite;
+            animation-direction: alternate;
+            background-size: 500%;
+
         }
         @keyframes gradient {
-            0%, 100%{
-                background-image: linear-gradient(90deg, #6ee7b7 #10b981, #047857);
+            0%{
+                background-position: 0%;
+            }   
+            100%{
+                background-position: 100%;
             }
         }
     </style>
 </head>
 <body>
-    
 </body>
 </html>

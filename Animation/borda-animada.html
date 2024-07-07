@@ -14,45 +14,55 @@
             height: 100vh;
             width: 100vw;
             display: flex;
-            align-items: center;
             justify-content: center;
-            background: linear-gradient(120deg, crimson, gold);
+            align-items: center;
+            background: linear-gradient(270deg, red, purple);
+            background-size: 400%;
+            animation: back 6s linear infinite alternate;
+        }
+        @keyframes back {
+            0%{
+                background-position: 0%;
+            }
+            100%{
+                background-position: 100%;
+            }
         }
         h1{
-            width: 600px;
-            height: 400px;
+            height: 300px;
+            width: 500px;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 50px;
-            border-radius: 50px;
+            font-size: 70px;
             
-            background: linear-gradient(to bottom, red, crimson);
-            -webkit-background-clip: text;
             color: transparent;
-            position: relative;
+            background: linear-gradient(to bottom, red, purple);
+            -webkit-background-clip: text;
+
             overflow: hidden;
+            position: relative;
+            border-radius: 20px;
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.486);
         }
         h1::before{
             content: "";
-            width: 200px;
             height: 200%;
+            width: 200px;
+            background-image: linear-gradient(127deg, green, rgb(84, 255, 84));
             position: absolute;
-            background: linear-gradient(black, gray);
-            animation: gira 5s linear infinite;
             z-index: -1;
-            
+            animation: borda 5s linear infinite;
         }
         h1::after{
             content: "";
-            position: absolute;
             inset: 5px;
-            background: linear-gradient(to bottom, crimson, blue);
-            border-radius: inherit;
+            background: linear-gradient(190deg, white, black 90%);
+            position: absolute;
             z-index: -1;
-            
+            border-radius: inherit;
         }
-        @keyframes gira {
+        @keyframes borda {
             100%{
                 transform: rotate(360deg);
             }

@@ -19,7 +19,7 @@
         border-radius: 20px;
         animation-name: aparecer;
         animation-duration: 4s;
-        animation-iteration-count: infinite;
+        /* animation-iteration-count: infinite; */
         animation-direction: alternate;
         width: 200px;
         text-align: center;
@@ -30,16 +30,17 @@
         background-clip: text;
         -webkit-background-clip: text;
         animation-name: tuts;
-        animation-duration: 5s;
+        animation-duration: 8s;
         animation-iteration-count: infinite;
         animation-direction: alternate;
+
       }
       @keyframes aparecer {
         0% {
           transform: translateX(-100vh);
         }
         100% {
-          transform: translateX(5vh) rotate(360deg);
+          transform: translateX(0vh) rotate(360deg);
 
         }
       }

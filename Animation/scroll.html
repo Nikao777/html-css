@@ -12,15 +12,15 @@
         /* height: 100vh; */
         margin: 0 auto;
       }
-      body::-webkit-scrollbar{
+      body::-webkit-scrollbar {
         width: 10px;
         background-color: rgb(121, 121, 121);
       }
-      body::-webkit-scrollbar-thumb{
+      body::-webkit-scrollbar-thumb {
         background-color: rgb(77, 0, 179);
         border-radius: 10px;
       }
-      body::-webkit-scrollbar{
+      body::-webkit-scrollbar {
         border-radius: 10px;
       }
 
@@ -43,10 +43,8 @@
         transition: all 2s;
         transform: translateX(-100%);
         filter: blur(15px);
-
-
       }
-      .left{
+      .left {
         opacity: 0;
         transition: all 2s;
         transform: translateX(100%);
@@ -58,7 +56,6 @@
         transform: translateX(5%);
         filter: blur(0px);
       }
-
     </style>
   </head>
   <body>
@@ -84,7 +81,6 @@
         quaerat quisquam rem ab beatae ex quis distinctio totam expedita
         sapiente, perspiciatis et.
       </p>
-      
     </section>
     <section class="hidden">
       <p>
@@ -105,37 +101,37 @@
         quaerat quisquam rem ab beatae ex quis distinctio totam expedita
         sapiente, perspiciatis et.
       </p>
-      
     </section>
     <section class="hidden">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ad, sit
-          facere, necessitatibus maxime sint atque doloremque veritatis dolorem,
-          mollitia rerum pariatur animi assumenda incidunt. Nisi nobis aspernatur
-          harum architecto. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Architecto laborum ipsa aliquam fugit sit! Illo magnam quidem
-          quaerat quisquam rem ab beatae ex quis distinctio totam expedita
-          sapiente, perspiciatis et.
-        </p>
-      </section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ad, sit
+        facere, necessitatibus maxime sint atque doloremque veritatis dolorem,
+        mollitia rerum pariatur animi assumenda incidunt. Nisi nobis aspernatur
+        harum architecto. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Architecto laborum ipsa aliquam fugit sit! Illo magnam quidem
+        quaerat quisquam rem ab beatae ex quis distinctio totam expedita
+        sapiente, perspiciatis et.
+      </p>
+    </section>
     <script>
       const myObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting){
-            entry.target.classList.add('show');
+          if (entry.intersectionRatio > 0) {
+            entry.target.classList.add("show");
           } else {
-            entry.target.classList.remove('show');
+            entry.target.classList.remove("show");
           }
-        })
-      })
-      const hidden = document.querySelectorAll('.hidden');
-      const toLeft = document.querySelectorAll('.left');
+        });
+      });
+
+      const hidden = document.querySelectorAll(".hidden");
+      const toLeft = document.querySelectorAll(".left");
       hidden.forEach((item) => {
-        myObserver.observe(item)
+        myObserver.observe(item);
       });
       toLeft.forEach((element) => {
-        myObserver.observe(element)
-      })
+        myObserver.observe(element);
+      });
     </script>
   </body>
 </html>
